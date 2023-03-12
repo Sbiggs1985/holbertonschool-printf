@@ -13,6 +13,7 @@ int print_char(va_list c);
 int print_int(va_list i);
 int decimal(va_list d);
 int print_bin(va_list b);
+int print_percent(void);
 
 typedef struct code_format
 {
