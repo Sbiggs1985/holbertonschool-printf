@@ -8,4 +8,7 @@
 
 int _printf(const char *format, ...);
 void _putchar(char c);
+char c = (char)va_arg(args, int);
+char *s = va_arg(args, char *);
+
 #endif
