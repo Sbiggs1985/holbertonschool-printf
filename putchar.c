@@ -8,7 +8,7 @@
 * Return: a sigle char after the function runs
 */
 
-void _putchar(char c)
+int _putchar(char c)
 {
-	write(STDOUT_FILENO, &c, 1);
+	return (write(1, &c, 1));
 }
