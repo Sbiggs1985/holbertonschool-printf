@@ -12,7 +12,7 @@ int print_string(va_list s);
 int print_char(va_list c);
 int print_int(va_list i);
 int print_bin(va_list b);
-int print_dec(va_lst d);
+int print_dec(va_list d);
 int print_percent(void);
 
 typedef struct code_format
