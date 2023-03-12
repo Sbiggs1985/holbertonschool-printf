@@ -9,7 +9,7 @@
 
 int print_dec(va_list d)
 {
-	int len, x, y, d, n, count = 0, num;
+	int len, x, y, a, n, count = 0, num;
 
 	n = va_arg(d, int);
 	if (n != 0)
@@ -31,13 +31,13 @@ int print_dec(va_list d)
 			x *= 10;
 		for (y = 1; y <= len; y++)
 		{
-			d = n / x;
+			a = n / x;
 			if (n < 0)
 				_putchar((d * -1) + 48);
 			else
 				_putchar(d + '0');
 			count++;
-			n -= d * x;
+			n -= a * x;
 			x /= 10;
 		}
 	}
