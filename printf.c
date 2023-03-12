@@ -5,7 +5,7 @@
 
 /**
  * _printf - printf function output according to a format
- * @format: String with format 
+ * @format: String with format
  * Return: number of chars to print
  */
 
@@ -13,8 +13,9 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int i = 0, count = 0;
-	va_start(args, format);
-	
+
+	va_start(args, forma);
+
 	while (format[i] != '\0')
 	{
 	if (format[i] == '%')
@@ -25,7 +26,7 @@ int _printf(const char *format, ...)
 	{
 		case 'c':
 		count += print_char(args);
-		                break;
+				break;
 		count += print_char(args);
 				break;
 		count += print_char(args);
@@ -34,7 +35,7 @@ int _printf(const char *format, ...)
 				case 'i':
 		count += print_int(args);
 				break;
-		case 'b':
+				case 'b':
 		count += print_bin(args);
 				break;
 		case '%':
