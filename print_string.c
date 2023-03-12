@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-/*
+/**
  * print_string - writes the character
  * Description: We are printing a string without using printf
  * @s: string to be printed
