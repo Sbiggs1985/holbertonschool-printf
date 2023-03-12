@@ -33,10 +33,7 @@ int print_dec(va_list d)
 		{
 			a = n / x;i
 			if (n < 0)
-<<<<<<< HEAD
-				_putchar((d * -1);
-=======
->>>>>>> 60390c000a98b5f78a046c9ff9d0f6fa248f2dfb
+				_putchar(a * -1);
 				_putchar((a * -1) + 48);
 			else
 				_putchar(a + '0');
