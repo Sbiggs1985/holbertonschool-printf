@@ -27,19 +27,17 @@ int _printf(const char *format, ...)
 		case 'c':
 		count += print_char(args);
 				break;
-		count += print_char(args);
+		case 'd':
+		count += print_dec(args);
 				break;
-		count += print_char(args);
-				break;
-				case 'd':
-				case 'i':
+		case 'i':
 		count += print_int(args);
-				break;
-				case 'b':
-		count += print_bin(args);
 				break;
 		case '%':
 		count += _putchar('%');
+				break;
+		case 's':
+		count += print_string(args);
 				break;
 		default:
 		count += _putchar('%');
