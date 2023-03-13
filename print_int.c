@@ -9,18 +9,18 @@
 
 int print_int(va_list i)
 {
-	int len, x, y, d, n, count = 0, num;
+	int len = 0, x, y, d, n, num, count = 0;
 
 	n = va_arg(i, int);
 	if (n != 0)
 	{
 		if (n < 0)
 		{
-			_putchar('_');
+			_putchar('-');
 			count++;
 		}
-		num = n;
 		len = 0;
+		num = n;
 		while (num != 0)
 		{
 			num /= 10;
@@ -33,7 +33,7 @@ int print_int(va_list i)
 		{
 			d = n / x;
 			if (n < 0)
-				_putchar((d * -1) + 48);
+				_putchar(d * -1);
 			else
 				_putchar(d + '0');
 			count++;
