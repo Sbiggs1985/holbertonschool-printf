@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_string(va_list s);
+int s_print(va_list list);
 int print_char(va_list c);
 int countDigits(unsigned int num);
 int print_number(unsigned int n);

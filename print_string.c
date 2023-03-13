@@ -2,25 +2,27 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * print_string - writes the character
+ * s_print - writes the character
  * Description: We are printing a string without using printf
  * @s: string to be printed
  * Return: 1
  */
-int print_string(va_list s)
+int s_print(va_list list)
 {
-	char *string;
-	int i = 0;
+	char *str = va_arg(list, char *);
+	int count = 0;
+	int retval;
 
-	string = va_arg(s, char *);
+	if (!str)
+		str = "(null)";
 
-	if (string == NULL)
-		string = "(null)";
-
-	while (string[i])
+	while (*str)
 	{
-		_putchar(string[i]);
-		i++;
+		retval = _putchar(*str);
+		if (retval == -1)
+			return (-1);
+		count++;
+		str++;
 	}
-	return (i);
+	return (count);
 }
