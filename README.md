@@ -1,5 +1,6 @@
 _printf Function
 The _printf function is a custom implementation of the standard printf function from the C standard library. It takes a format string and a variable number of arguments, formats the string according to the conversion specifiers, and prints the resulting string to the standard output.
+
 Usage
 The function is declared as follows:
 int _printf(const char *format, ...);
