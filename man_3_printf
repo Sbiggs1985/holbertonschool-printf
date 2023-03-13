@@ -1,0 +1,53 @@
+/** @file
+
+@brief The _printf function definition
+*/
+/**
+
+@brief The _printf function prints formatted output to the stdout stream
+The _printf function writes the output to the standard output stream (stdout).
+The output is generated based on the format string provided as input. The format
+string may contain conversion specifications, each of which results in fetching
+zero or more arguments. The arguments must match the format exactly.
+@param format The format string containing conversion specifications
+@param ... Optional arguments to be printed according to the format string
+@return The number of characters printed, excluding the null byte used to end
+output to strings. If an output error occurs, the function returns a negative value.
+*/
+int _printf(const char *format, ...);
+/**
+
+@brief The %c conversion specifier
+The %c conversion specifier is used to print a single character. The argument is
+an int, which is converted to unsigned char. The character is written to the stdout
+stream.
+*/
+/**
+
+@brief The %s conversion specifier
+The %s conversion specifier is used to print a string of characters. The argument is
+a pointer to the first character of the string. The string is written to the stdout
+stream.
+*/
+/**
+
+@brief The %% conversion specifier
+The %% conversion specifier is used to print a percent sign. The percent sign is
+written to the stdout stream.
+*/
+/**
+
+@brief The %d and %i conversion specifiers
+The %d and %i conversion specifiers are used to print signed decimal integers. The
+argument is of type int. The integer is written to the stdout stream.
+*/
+/**
+
+@brief Bugs
+Known bugs with checkers in question 0.
+*/
+/**
+
+@brief Authors
+Kristina Fortney & Stephainie Biggs
+*/
