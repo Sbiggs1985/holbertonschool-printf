@@ -56,7 +56,7 @@ int d_print(va_list list)
 	int retval;
 	unsigned int unsign;
 
-	if (n < 0)
+	if (num < 0)
 	{
 		retval = _putchar('-');
 		if (retval == -1)
