@@ -8,17 +8,11 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_string(va_list s);
+int s_print(va_list list);
 int print_char(va_list c);
-int print_int(va_list i);
-int print_bin(va_list b);
-int print_dec(va_list d);
+int countDigits(unsigned int num);
+int print_number(unsigned int n);
+int d_print(va_list list);
 int print_percent(void);
-
-typedef struct code_format
-{
-	char *sc;
-	int (*f)(va_list);
-} code_f;
 
 #endif
